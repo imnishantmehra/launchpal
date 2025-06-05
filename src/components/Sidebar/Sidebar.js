@@ -22,7 +22,7 @@ const Sidebar = ({ isOpen, onClose }) => {
         <FaTimes />
       </button>      
       <div className="mb-10 flex items-center gap-2 mt-6 md:mt-6 px-1">
-        <Link to="/"><img src={Logo} alt="LaunchPal Logo" className="w-[249px] h-[56px] object-contain" /></Link>
+        <Link to="/"><img src={Logo} alt="LaunchPal Logo" className="w-[169px] sm:w-[209px] object-contain" /></Link>
         <span className="text-green-600 font-semibold text-sm bg-[#EFFDF4] border border-[#62A979] rounded-lg px-2 mt-3">Beta</span>
       </div>      
       <div className="mb-6 px-4 relative">
@@ -64,7 +64,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             <rect x="6.5" y="16.5" width="7" height="7" rx="2.5" stroke="#7E22CD" />
             <rect x="16.5" y="16.5" width="7" height="7" rx="2.5" stroke="#7E22CD" />
           </svg>
-          <Link to="/">Dashboard</Link>
+          <Link to="/" onClick={onClose}>Dashboard</Link>
         </li>
       </ul>
       <div className='px-4'>
@@ -78,7 +78,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             <ul className="space-y-3">
               {section.items.map((item, i) => (
                 <li key={i} className="flex items-center p-1 rounded-lg cursor-pointer hover:bg-gray-100">
-                  <Link to={item.path} className="flex items-center w-full">
+                  <Link to={item.path} onClick={onClose} className="flex items-center w-full">
                     <span className="bg-white py-1 h-[40px] w-[40px] rounded-xl mr-4 border-2 border-[#f2f2f2] drop-shadow-md flex justify-center items-center">
                       {item.icon}
                     </span>

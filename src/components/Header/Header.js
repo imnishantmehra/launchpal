@@ -19,17 +19,19 @@ const Header = ({ onToggleSidebar }) => {
 
   return (
     <header className="flex items-center justify-between px-2 py-4 bg-white relative">
+     
       <button
-        className="md:hidden text-2xl flex items-center justify-between gap-2"
+        className="md:hidden text-2xl flex items-center justify-between gap-2 border p-1 rounded"
         onClick={onToggleSidebar}
         aria-label="Toggle Sidebar"
       >
-        <MdMenu />
+      <MdMenu />
       </button>
-
+      
       <div className="flex justify-end items-center w-full md:justify-between">
         <div className="flex items-center ml-auto mr-2 sm:mr-10 relative">
-          <span className="text-base font-bold text-black mr-4 flex items-center gap-2 mr-2 sm:mr-5">
+        
+          <span className="hidden sm:flex text-base font-bold text-black mr-4 flex items-center gap-2 mr-2 sm:mr-5">         
             palai.launchpal.ai <FaRegCopy className="text-[#000] size-4" />
           </span>
           <button className="bg-[#7E22CD] text-base font-semibold text-white h-[40px] px-4 py-2 rounded-lg flex items-center mr-5">
@@ -45,13 +47,16 @@ const Header = ({ onToggleSidebar }) => {
             </button>
 
             {dropdownOpen && (
-              <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg z-20">
+              <div className="absolute right-0 mt-2 w-48 sm:w-32 bg-white border border-gray-200 rounded-md shadow-lg z-20">
                 <ul className="py-2 text-sm text-gray-700">
                   <li>
                   <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Settings</Link>                   
                   </li>
                   <li>
                     <Link to="/" className="block px-4 py-2 hover:bg-gray-100">Logout</Link>                   
+                  </li>
+                  <li className="sm:hidden">
+                    <Link to="/" className="flex gap-2 px-4 py-2 hover:bg-gray-100">palai.launchpal.ai <FaRegCopy className="text-[#000] size-4" /></Link>                   
                   </li>
                 </ul>
               </div>
