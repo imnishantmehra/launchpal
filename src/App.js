@@ -33,16 +33,16 @@ function App() {
           >
             <Routes>
               <Route path="/" element={<MainContent />} />
-              <Route path="/content" element={<div>Content Page</div>} />
-              <Route path="/approval" element={<div>Approval Page</div>} />
-              <Route path="/brand-controls" element={<div>Brand Controls Page</div>} />
-              <Route path="/post-now" element={<div>Post Now Page</div>} />
-              <Route path="/themes" element={<div>Themes Page</div>} />
-              <Route path="/calendar" element={<div>Calendar Page</div>} />
-              <Route path="/activity-feed" element={<div>Activity Feed Page</div>} />
-              <Route path="/analytics" element={<div>Analytics Page</div>} />
-              <Route path="/reports" element={<div>Reports Page</div>} />
-              <Route path="/settings" element={<div>Settings Page</div>} />
+              <Route path="/content" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Content</h2>} />
+              <Route path="/approval" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Approval</h2>} />
+              <Route path="/brand-controls" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Brand Controls</h2>} />
+              <Route path="/post-now" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Post Now</h2>} />
+              <Route path="/themes" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Themes</h2>} />
+              <Route path="/calendar" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Calendar</h2>} />
+              <Route path="/activity-feed" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Activity Feed</h2>} />
+              <Route path="/analytics" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Analytics</h2>} />
+              <Route path="/reports" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Reports</h2>} />
+              <Route path="/settings" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Settings</h2>} />
             </Routes>
           </main>
           <Footer />

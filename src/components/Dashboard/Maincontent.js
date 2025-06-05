@@ -5,7 +5,7 @@ const ColdStart = () => {
   return (
     <div className="flex-1 p-0 sm:p-0 bg-gray-50 mt-[0] sm:mt-[42px]">
      
-      <div className="flex flex-col sm:flex-row justify-center gap-[37px] px-[0] 2xl:px-[140px] xl:px-[100px] md:px-[50px]">
+      <div className="flex flex-col sm:flex-row justify-center gap-[37px] px-[0] 2xl:px-[140px] xl:px-[80px] md:px-[50px]">
        
         <div className="bg-white p-[20px] sm:p-[54px] rounded-3xl w-sm flex flex-col items-center " style={{ boxShadow: '0px 5px 9px rgba(0, 0, 0, 0.07)' }}>
           <div className="w-full h-[153px] bg-[#E9EEF4] mb-[27px]"></div>

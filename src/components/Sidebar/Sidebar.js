@@ -71,7 +71,7 @@ const Sidebar = ({ isOpen, onClose }) => {
         {sidebarMenu.map((section, idx) => (
           <div key={idx} className="mb-6">
             {section.title && (
-              <h3 className="text-md font-semibold text-gray-600 mt-6 mb-3 ml-3 uppercase">
+              <h3 className="text-md font-semibold text-gray-600 mt-6 sm:mt-10 mb-3 ml-3 uppercase">
                 {section.title}
               </h3>
             )}
