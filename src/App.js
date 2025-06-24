@@ -8,6 +8,10 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import ContentType from "./components/Content-Type/CotentType";
+import PreviewScreen from "./components/PreviewScreen/PreviewScreen";
+import Content from "./components/Content/Content";
+import ContentCreation from "./components/Content-Creation/ContentCreation";
 
 
 function App() {
@@ -27,13 +31,15 @@ function App() {
             <div className="fixed inset-0 z-10 bg-black opacity-80 transition-opacity duration-300 md:hidden"></div>
           )}
           <main
-            className={`flex-1 overflow-y-auto p-6 transition-all duration-300 ${
-              sidebarOpen ? "bg-black/50 pointer-events-none" : "bg-gray-50"
-            }`}
+            className={`flex-1 overflow-y-auto p-6 transition-all duration-300 ${sidebarOpen ? "bg-black/50 pointer-events-none" : "bg-gray-50"
+              }`}
           >
             <Routes>
               <Route path="/" element={<MainContent />} />
-              <Route path="/content" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Content</h2>} />
+              <Route path="/content-type" element={<ContentType />} />
+              <Route path="/preview" element={<PreviewScreen />} />
+              <Route path="/content-creation" element={<ContentCreation />} />
+              <Route path="/content" element={<Content />} />
               <Route path="/approval" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Approval</h2>} />
               <Route path="/brand-controls" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Brand Controls</h2>} />
               <Route path="/post-now" element={<h2 className="text-xl font-bold bg-gray-100 py-4 px-4">Post Now</h2>} />
